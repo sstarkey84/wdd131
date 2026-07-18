@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive webpage featuring information and weather for Alaska.">
+    <meta name="author" content="Scott Starkey">
+    <title>Alaska | Country Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Alaska</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/alaska-large.webp" media="(min-width: 700px)">
+                <img src="images/alaska-small.webp" alt="Snow covered mountains and wilderness in Alaska" width="600"
+                    height="800">
+            </picture>
+            <section class="data">
+                <h2>Data</h2>
+                <div class="information">
+                    <p><strong>Area:</strong> 655,384 sq mi</p>
+                    <p><strong>Population:</strong>733,406</p>
+                    <p><strong>Capital:</strong> Juneau</p>
+                    <p><strong>Largest City:</strong> Anchorage</p>
+                    <p><strong>Statehood:</strong> January 3, 1959</p>
+                    <p><strong>Time Zone:</strong>Alaska Time</p>
+                    <p><strong>Calling Code:</strong> +1</p>
+                    <p><strong>Nickname:</strong> The Last Frontier</p>
+                </div>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <img class="weather-icon" src="images/weather.svg" alt="Partly cloudy weather icon" width="80"
+                    height="80">
+                <div class="information">
+                    <p><strong>Temperature:</strong> 35 F</p>
+                    <p><strong>Conditions:</strong> Partly Cloudy</p>
+                    <p><strong>Wind:</strong> 8 mph</p>
+                    <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Scott Starkey | Alaska
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
