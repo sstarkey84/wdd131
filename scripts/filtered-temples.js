@@ -163,3 +163,20 @@ newLink.addEventListener("click", (event) => {
     displayTemples(newTemples);
 });
 
+largeLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    const largeTemples = temples.filter((temple) => {
+        return temple.area > 90000;
+    });
+    pageHeading.textContent = "Large Temples";
+    displayTemples(largeTemples);
+});
+
+smallLink.addEventListener("Click", (event) => {
+    event.preventDefault();
+    const smallTemples = temples.filter((temple) => {
+        return temple.area < 10000;
+    });
+    pageHeading.textContent = "Small Temples";
+    displayTemples(smallTemples);
+})
