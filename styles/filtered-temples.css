@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #fff;
+}
+
+header {
+    background-color: #163a70;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+.site-title {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 525;
+    text-align: left;
+}
+
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    color: white;
+    border: none;
+}
+
+#menu::before {
+    content: "\2630";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+nav a {
+    display: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75rem;
+}
+
+nav.open a {
+    display: block;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #163a70;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0 2rem;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    padding-top: 0.5rem;
+}
+
+footer {
+    background-color: #163a70;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#lastModified {
+    color: #ffd700;
+}
