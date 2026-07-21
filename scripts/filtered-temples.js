@@ -174,9 +174,14 @@ largeLink.addEventListener("click", (event) => {
 
 smallLink.addEventListener("click", (event) => {
     event.preventDefault();
+    console.log("Small clicked");
+
     const smallTemples = temples.filter((temple) => {
         return temple.area < 10000;
     });
+
+    console.log(smallTemples);
+
     pageHeading.textContent = "Small Temples";
     displayTemples(smallTemples);
 });
