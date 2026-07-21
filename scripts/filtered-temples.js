@@ -172,7 +172,7 @@ largeLink.addEventListener("click", (event) => {
     displayTemples(largeTemples);
 });
 
-smallLink.addEventListener("Click", (event) => {
+smallLink.addEventListener("click", (event) => {
     event.preventDefault();
     const smallTemples = temples.filter((temple) => {
         return temple.area < 10000;
