@@ -179,4 +179,4 @@ smallLink.addEventListener("Click", (event) => {
     });
     pageHeading.textContent = "Small Temples";
     displayTemples(smallTemples);
-})
+});
