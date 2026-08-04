@@ -102,7 +102,7 @@ input[type="text"] {
 footer {
     max-width: 550px;
     margin: 0 auto;
-    background: (2, 2, 90);
+    background: rgb(2, 2, 90);
     color: white;
     text-align: center;
     padding: 20px 0 20px 0;
