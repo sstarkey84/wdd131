@@ -99,10 +99,14 @@ input[type="text"] {
     margin-bottom: 16px;
 }
 
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
 input[type="checkbox"]+label {
-    display: inline;
-    font-weight: normal;
-    margin: 0 0 0 6px;
+    display: block;
+    font-weight: bold;
+    margin: -20px 0 12px 24px;
 }
 
 footer {
