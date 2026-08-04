@@ -99,6 +99,12 @@ input[type="text"] {
     margin-bottom: 16px;
 }
 
+input[type="checkbox"]+label {
+    display: inline;
+    font-weight: normal;
+    margin: 0 0 0 6px;
+}
+
 footer {
     max-width: 550px;
     margin: 0 auto;
