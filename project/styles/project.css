@@ -303,15 +303,4 @@ nav a:hover {
     font-size: 1rem;
 }
 
-.location-search select {
-    display: block;
-    width: 400px;
-    max-width: 100%;
-    padding: .8rem;
-    font-size: 1rem;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-}
-
 /* This is a comment and more*/
