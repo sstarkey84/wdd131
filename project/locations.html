@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California Trout Fishing Guide | Locations</title>
+    <meta name="description"
+        content="Learn about trout fishing locations based on regions in California and which type of trout is located in that region.">
+    <meta name="author" content="Scott Starkey">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.comcss2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>California Trout Fishing Locations</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="Gear.html">Gear</a></li>
+                <li><a href="reference.html">Reference</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/trout-location-hero1.jpg" alt="Mountain lake in California known for trout fishing"
+                width="1200" height="600">
+            <div class="hero-text">
+                <h2>California's Best Trout Fishing Locations</h2>
+                <p>
+                    Explore some of California's most popular lakes and rivers for trout fishing.
+                </p>
+            </div>
+        </section>
+
+        <section class="finder">
+            <h2>Find a Fishing Location</h2>
+            <p>
+                Select a region to discover a recommended trout fishing destination.
+            </p>
+            <label for="region">Choose a Region</label>
+            <select id="region">
+                <option value="">Select a Region</option>
+                <option value="north">Northern California</option>
+                <option value="sierra">Sierra Nevada</option>
+                <option value="east">Eastern Sierra</option>
+            </select>
+
+            <button id="find-location">Find a Fishing Spot</button>
+            <div id="location-result">
+                <p>Your recommended fishing location will appear here.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span> Scott Starkey | California
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

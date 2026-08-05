@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California Trout Fishing Guide | Home</title>
+    <meta name="description"
+        content="Learn about trout fishing in California including the best locations, recommended gear, and helpful tips.">
+    <meta name="author" content="Scott Starkey">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.comcss2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>California Trout Fishing Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="Gear.html">Gear</a></li>
+                <li><a href="reference.html">Reference</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero-trout1.jpg" alt="Angler fishing for trout in a California mountain lake">
+            <div class="hero-text">
+                <h2>Discover California Trout Fishing</h2>
+                <p>
+                    Learn about trout species, the best fishing destinations, and the gear that will help make your trip
+                    successful.
+                </p>
+            </div>
+
+        </section>
+        <section class="species">
+            <h2>Featured Trout Species</h2>
+            <div class="species-container">
+                <article class="species-card">
+                    <img src="images/rainbow-trout.jpeg" alt="Rainbow Trout" loading="lazy">
+                    <h3>Rainbow Trout</h3>
+                    <p>California's most common trout species and an excellent choice for anglers of all experience
+                        levels.</p>
+                </article>
+                <article class="species-card">
+                    <img src="images/brown-trout.jpg" alt="Brown Trout" loading="lazy">
+                    <h3>Brown Trout</h3>
+                    <p>Known for their size and cautious nature, brown trout provide a rewarding challenge.</p>
+                </article>
+                <article class="species-card">
+                    <img src="images/golden-trout.jpg" alt="Golden Trout" loading="lazy">
+                    <h3>Golden Trout</h3>
+                    <p>California's state freshwater fish, found in high-elevation streams of the Sierra Nevada.</p>
+                </article>
+            </div>
+        </section>
+        <section class="tip-section">
+            <h2>Fishing Tip of the Day</h2>
+            <p id="fishingTip">Loading today's fishing tip...</p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span> Scott Starkey | California
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
