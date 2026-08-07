@@ -7,11 +7,11 @@ const fishingTips = [
 ];
 
 function displayFishingTip() {
-    const displayFishingTip = document.querySelector("#fishingtip");
+    const fishingTip = document.querySelector("#fishingtip");
 
     if (fishingTip) {
         const randomNumber = Math.floor(Math.random() * fishingTips.length);
-        document.querySelector("#fishingTip").textContent = fishingTips[randomNumber];
+        fishingTip.textContent = fishingTips[randomNumber];
     }
 }
 
