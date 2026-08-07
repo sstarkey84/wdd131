@@ -7,8 +7,12 @@ const fishingTips = [
 ];
 
 function displayFishingTip() {
-    const randomNumber = Math.floor(Math.random() * fishingTips.length);
-    document.querySelector("#fishingTip").textContent = fishingTips[randomNumber];
+    const displayFishingTip = document.querySelector("#fishingtip");
+
+    if (fishingTip) {
+        const randomNumber = Math.floor(Math.random() * fishingTips.length);
+        document.querySelector("#fishingTip").textContent = fishingTips[randomNumber];
+    }
 }
 
 displayFishingTip();
